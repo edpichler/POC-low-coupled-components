@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/serviceComponents.xml
+Export-Package: meuaddon;uses:="org.springframework.roo.model,org.spri
+ ngframework.roo.shell,org.springframework.roo.classpath.details,org.s
+ pringframework.roo.classpath.details.annotations,org.springframework.
+ roo.classpath.itd,org.springframework.roo.project,org.springframework
+ .roo.support.util,org.springframework.roo.metadata,org.springframewor
+ k.roo.support.style,org.springframework.roo.classpath,org.osgi.servic
+ e.component,org.w3c.dom"
+Built-By: eduardo.pichler
+Tool: Bnd-1.15.0
+Bundle-Name: meuaddon
+Created-By: Apache Maven Bundle Plugin
+Bundle-Copyright: Copyright Your project/company name goes here (used 
+ in copyright and vendor information in the manifest). All Rights Rese
+ rved.
+Bundle-Vendor: Your project/company name goes here (used in copyright 
+ and vendor information in the manifest)
+Build-Jdk: 1.6.0_25
+Bundle-Version: 0.1.0.BUILD-SNAPSHOT
+Bnd-LastModified: 1327495038599
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/copyleft/gpl.html
+Bundle-Description: An add-on created by Spring Roo's addon creator fe
+ ature.
+Import-Package: org.osgi.service.component;version="[1.1,2)",org.sprin
+ gframework.roo.classpath;version="[1.2,2)",org.springframework.roo.cl
+ asspath.details;version="[1.2,2)",org.springframework.roo.classpath.d
+ etails.annotations;version="[1.2,2)",org.springframework.roo.classpat
+ h.itd;version="[1.2,2)",org.springframework.roo.metadata;version="[1.
+ 2,2)",org.springframework.roo.model;version="[1.2,2)",org.springframe
+ work.roo.project;version="[1.2,2)",org.springframework.roo.shell;vers
+ ion="[1.2,2)",org.springframework.roo.support.style;version="[1.2,2)"
+ ,org.springframework.roo.support.util;version="[1.2,2)",org.w3c.dom
+Bundle-SymbolicName: meuaddon
+Bundle-DocURL: http://www.some.company
+

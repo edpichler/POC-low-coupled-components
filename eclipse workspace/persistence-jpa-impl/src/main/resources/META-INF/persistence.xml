@@ -1,0 +1,47 @@
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="pesistenceUnit">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+		<class>com.edpichler.address.impl.AddressImpl</class>
+		<class>com.edpichler.address.impl.CountryImpl</class>
+		<class>com.edpichler.address.impl.CountryStateImpl</class>
+		<class>com.edpichler.address.impl.CityImpl</class>
+		<class>com.edpichler.person.impl.PersonImpl</class>
+		<class>com.edpichler.person.impl.ContactImpl</class>
+		<class>com.edpichler.product.impl.ProductImpl</class>
+		<class>com.edpichler.inventory.impl.ProductMovmentImpl</class>
+		<class>com.edpichler.productSale.impl.ProductSaleImpl</class>
+		<class>com.edpichler.service.impl.ServiceImpl</class>
+		<class>com.edpichler.serviceSale.ServiceSaleImpl</class>
+		
+		<properties>
+			<!-- Embedded Derby Login -->
+			<!-- This is a example. Integrated with your software, you must setup 
+				the correct database parameters. -->
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby:MyDerbyData;create=true" />
+			<property name="eclipselink.target-database" value="Derby" />
+
+			<!-- don't need userid/password in embedded Derby -->
+			<property name="eclipselink.jdbc.read-connections.min"
+				value="1" />
+			<property name="eclipselink.jdbc.batch-writing" value="JDBC" />
+
+			<!-- Database Schema Creation -->
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+			<property name="exclude-unlisted-classes" value="false" />
+
+			<!-- Logging Settings -->
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.thread" value="false" />
+			<property name="eclipselink.logging.session" value="false" />
+			<property name="eclipselink.logging.exceptions" value="true" />
+			<property name="eclipselink.logging.timestamp" value="true" />
+
+		</properties>
+	</persistence-unit>
+</persistence>
